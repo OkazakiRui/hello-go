@@ -1,6 +1,7 @@
 package main
 
 func main() {
-	println("hello, world")
+	str := "hello world"
+	println(str)
 }
 
