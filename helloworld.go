@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	str := "hello world"
+	const str = "hello world"
 	println(str)
 }
 
