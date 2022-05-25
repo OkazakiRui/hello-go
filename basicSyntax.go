@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func s_var() {
 	var n int = 100
 	// 自動推論
@@ -43,8 +45,29 @@ func s_iota()  {
 	println(d, e, f)
 }
 
+func s_if() {
+	if a := -12; a > 0 {
+		fmt.Println(a)
+	} else {
+		fmt.Println(2*a)
+	}
+}
+
+func s_switch() {
+	a := 1
+	switch a {
+		case 1, 2:
+			fmt.Println("a is 1 or 2")
+			// break がいらない
+		default:
+			fmt.Println("defualt")
+	}
+}
+
 func main() {
 	// s_var()
 	// s_const()
-	s_iota()
+	// s_iota()
+	// s_if()
+	// s_switch()
 }
