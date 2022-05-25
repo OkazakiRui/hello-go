@@ -64,10 +64,33 @@ func s_switch() {
 	}
 }
 
+// goの繰り返しはforしかない
+func s_for()  {
+	for i := 0; i < 100; i++ {
+		fmt.Printf("i: %d\n", i)
+	}
+
+	j := 0
+	for j < 100 {
+		j++
+		fmt.Printf("j: %d\n", j)
+	}
+
+	// 無限ループ
+	// for{
+	// }
+
+	// range を使用したループ
+	for k, l := range []int{1, 2, 3, 4, 5} {
+		fmt.Printf("k: %d, l: %d\n", k, l)
+	}
+}
+
 func main() {
 	// s_var()
 	// s_const()
 	// s_iota()
 	// s_if()
 	// s_switch()
+	s_for()
 }
