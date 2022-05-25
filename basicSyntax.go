@@ -84,6 +84,28 @@ func s_for()  {
 	for k, l := range []int{1, 2, 3, 4, 5} {
 		fmt.Printf("k: %d, l: %d\n", k, l)
 	}
+
+	var m int
+	for{
+		fmt.Printf("m: %d\n", m)
+		if m == 10 {
+			// break out of loop
+			break
+		}
+		m++
+	}
+
+	var n int
+
+	LOOP:
+		for{
+			fmt.Printf("n: %d\n", n)
+			if n == 10 {
+				// break out of loop
+				break LOOP
+			}
+			n++
+		}
 }
 
 func main() {
