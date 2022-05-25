@@ -96,8 +96,7 @@ func s_for()  {
 	}
 
 	var n int
-
-	LOOP:
+	LOOP: // for 文にラベルをつけることができる
 		for{
 			fmt.Printf("n: %d\n", n)
 			if n == 10 {
